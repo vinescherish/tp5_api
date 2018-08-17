@@ -85,6 +85,7 @@ class MemberController extends BaseController
 
         $aliSms = new   AliSms();
         $response = $aliSms->sendSms($tel, 'SMS_140680124', ['code' => $code], config('sms'));
+
         if ($response->Message === 'OK') {
 
             return api_json(1, '获取验证码成功');
