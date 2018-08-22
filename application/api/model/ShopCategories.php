@@ -4,7 +4,7 @@ namespace app\api\model;
 
 use think\Model;
 
-class Shops extends Model
+class ShopCategories extends Model
 {
-
+    //
 }

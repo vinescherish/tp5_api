@@ -195,5 +195,81 @@ define({ "api": [
         "url": "http://www.api.com/api/member/sms"
       }
     ]
+  },
+  {
+    "type": "any",
+    "url": "/api/shop/index",
+    "title": "店铺分类",
+    "version": "1.0.0",
+    "name": "__",
+    "group": "shop",
+    "description": "<p>获取所有店铺分类</p>",
+    "filename": "application/api/controller/ShopController.php",
+    "groupTitle": "shop",
+    "sampleRequest": [
+      {
+        "url": "http://www.api.com/api/shop/index"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/api/shop/goods",
+    "title": "店铺详情信息",
+    "version": "1.0.0",
+    "name": "goods",
+    "group": "shop",
+    "description": "<p>接口详细说明</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "id",
+            "defaultValue": "6",
+            "description": "<p>店铺ID</p>"
+          }
+        ]
+      }
+    },
+    "filename": "application/api/controller/ShopController.php",
+    "groupTitle": "shop",
+    "sampleRequest": [
+      {
+        "url": "http://www.api.com/api/shop/goods"
+      }
+    ]
+  },
+  {
+    "type": "get",
+    "url": "/api/shop/lists",
+    "title": "商家店铺接口",
+    "version": "1.0.0",
+    "name": "lists",
+    "group": "shop",
+    "description": "<p>商家店铺接口</p>",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "int",
+            "optional": false,
+            "field": "id",
+            "defaultValue": "2",
+            "description": "<p>商铺分类id</p>"
+          }
+        ]
+      }
+    },
+    "filename": "application/api/controller/ShopController.php",
+    "groupTitle": "shop",
+    "sampleRequest": [
+      {
+        "url": "http://www.api.com/api/shop/lists"
+      }
+    ]
   }
 ] });
